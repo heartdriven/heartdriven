@@ -1,16 +1,28 @@
- body {
-   font-family: Arial, Arial, Helvetica, sans-serif;
-   font-size: 14px;
- }
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
 
- footer {
-   background-color: #000000;
-   padding: 1em;
+header {
+  h1 {
+    font-weight: 700;
+  }
+}
 
-   a {
-     color: #EEEEEE;
-     &:hover {
-       color: #CCCCCC;
-     }
-   }
- }
+footer {
+  background-color: #000000;
+  padding: 1em;
+
+  a {
+    color: #eeeeee;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+dl {
+  dt {
+    font-weight: 700;
+  }
+}
