@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "heartdriven",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "HeartDriven.com Gatsby style",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -14,15 +14,18 @@
   },
   "dependencies": {
     "gatsby": "^2.1.27",
+    "gatsby-plugin-sass": "^2.0.10",
+    "node-sass": "^4.11.0",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-icons": "^3.5.0"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/heartdriven/heartdriven"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
