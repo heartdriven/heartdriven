@@ -1,18 +1,17 @@
 import React from "react"
-import { FaGithub } from "react-icons/fa"
+import Layout from "../components/layout/layout"
 
 export default () => (
-  <div className='container'>
-    <header>
-      <h1>Heart Driven</h1>
-    </header>
+  <Layout>
+    <h2>Hello there! <span role="img" aria-label="waving hand icon">👋</span></h2>
     <p>
-      Maybe you know the feeling: building your personal website is a difficult experience.
+      Maybe you know the feeling; building your personal website is a difficult experience.
       I'm building a site to showcase my work, and hope to launch it somewhere this spring!
     </p>
     <p>
-      Should you feel the urge to contact me, see my details below:
+      If you want to contact me, see my details below:
     </p>
+
     <dl>
       <dt>Phone:</dt>
       <dd>+32 (0) 499 21 49 58</dd>
@@ -23,7 +22,4 @@ export default () => (
       <dt>Company:</dt>
       <dd>Heart Driven <sup>bvba</sup><br />BE0838083859</dd>
     </dl>
-    <footer>
-      <a href="https://github.com/heartdriven/heartdriven" target="_blank" rel="noopener noreferrer"><FaGithub size="1.5em" /></a>
-    </footer>
-  </div>)
+  </Layout>)

@@ -14,7 +14,9 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
+    "bulma": "^0.7.4",
     "gatsby": "^2.1.27",
+    "gatsby-plugin-react-helmet": "^3.0.8",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "node-sass": "^4.11.0",
