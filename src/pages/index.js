@@ -3,23 +3,20 @@ import Layout from "../components/layout/layout"
 
 export default () => (
   <Layout>
-    <h2>Hello there! <span role="img" aria-label="waving hand icon">👋</span></h2>
-    <p>
-      Maybe you know the feeling; building your personal website is a difficult experience.
-      I'm building a site to showcase my work, and hope to launch it somewhere this spring!
-    </p>
-    <p>
-      If you want to contact me, see my details below:
-    </p>
-
-    <dl>
-      <dt>Phone:</dt>
-      <dd>+32 (0) 499 21 49 58</dd>
-      <dt>E-mail:</dt>
-      <dd><a href="mailto:info@heartdriven.com">info@heartdriven.com</a></dd>
-      <dt>Address:</dt>
-      <dd>Dokter Vannestestraat 4b<br />8510 MARKE</dd>
-      <dt>Company:</dt>
-      <dd>Heart Driven <sup>bvba</sup><br />BE0838083859</dd>
-    </dl>
+    <header className="page-title columns">
+      <div className="column is-three-fifths is-offset-one-fifth">
+        <h1 className="title">
+          Oh, hello there! <span role="img" aria-label="waving hand icon">👋</span>
+        </h1>
+        <p>
+          Maybe you know the feeling &mdash; finding inspiration to build your own website proves to be a difficult experience.  So why not build a tutorial out of it?
+        </p>
+        <p>
+          It may not be the most appealing site there is, but by the end at least you may have learned a thing or two ...
+        </p>
+        <p>
+          A tutorial is on the way on how to create decoupled websites using Drupal, Gastby and GraphQL.
+        </p>
+      </div>
+    </header>
   </Layout>)

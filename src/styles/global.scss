@@ -4,23 +4,66 @@ $color3: #197278;
 $color4: #EAEBED;
 $color5: #007EA7;
 
-$dark: $color5;
+$dark: darken($color5, 16%);
+$less-dark: darken($color5, 8%);
 $warning: $color1;
 
-// Navbar:
-$navbar-background-color: $color3;
+// Navbar
+$background: $color3;
+$navbar-item-color: $color4;
+
+$navbar-background-color: $less-dark;
+$navbar-box-shadow-color: $dark;
+
+// Customized navbar - dark apparently throws in some difficulties in using bulma variables:
+.navbar {
+  .navbar-menu {
+    .navbar-item {
+      &:hover {
+        color: $color3;
+      }
+      &:active, &.is-active {
+        background-color: $dark;
+        color: $color4;
+      }
+    }
+    .has-margin-left {
+      margin-left: 1em;
+    }
+  }
+}
 
 // Footer
 $footer-background-color: $color4;
 
-
 @import '../../node_modules/bulma/bulma.sass';
 
+nav .navbar-brand .navbar-item a {
+  color: #FFFFFF;
+}
+
 body {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
   font-weight: 400;
   margin: 0 auto;
+}
+
+header.page-title {
+  padding: 3em;
+  h1 {
+    text-align: center;
+    color: $dark;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #777777;
+    line-height: 1.7em;
+    &:not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+  }
 }
 
 main {
@@ -32,8 +75,8 @@ main {
   font-size: 1.5em;
 }
 
-footer {
-  padding: 1em;
+.footer {
+  padding: 3em 1.5em;
 
   .tabs ul {
     border-bottom-width: 0;
@@ -42,8 +85,34 @@ footer {
     }
   }
 }
+
+.footer-alternative {
+  padding: 3em 1.5em;
+  background-color: $color1;
+
+  a {
+    color: $color3;
+    &:hover {
+      color: $dark;
+    }
+  }
+
+  .icon {
+    vertical-align: top;
+  }
+}
+
 dl {
   dt {
     font-weight: 700;
+  }
+}
+
+.project-detail {
+  margin-bottom: 3em;
+
+  // Project title:
+  h3 {
+    color: $dark;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SidebarRight = () => (
-  <aside class="sidebar-right">
+  <aside className="sidebar-right">
     Right sidebar
   </aside>
 )

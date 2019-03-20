@@ -7,8 +7,8 @@ import Footer from "./footer"
 const Layout = ({ children }) => (
   <div>
     <Header></Header>
-    <div class="container">
-      <main class="content">
+    <div className="container">
+      <main className="content">
         { children }
       </main>
     </div>
