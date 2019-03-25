@@ -6,8 +6,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-drupal',
       options: {
-        // baseUrl: 'http://backend.heartdriven.com/',
-        baseUrl: 'http://heart-driven-backend.lndo.site/',
+        baseUrl: 'http://backend.heartdriven.com/',
+        //baseUrl: 'http://heart-driven-backend.lndo.site/',
         apiBase: 'jsonapi',
       }
     },
