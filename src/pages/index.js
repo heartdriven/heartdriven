@@ -15,7 +15,7 @@ export default () => (
           It may not be the most appealing site there is, but by the end at least you may have learned a thing or two ...
         </p>
         <p>
-          A tutorial is on the way on how to create decoupled websites using Drupal, Gastby and GraphQL.
+          A tutorial is on the way on how to create decoupled websites using Drupal, Gatsby and GraphQL.
         </p>
       </div>
     </header>
