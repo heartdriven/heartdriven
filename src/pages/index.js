@@ -1,8 +1,10 @@
 import React from "react"
+import SEO from "../components/layout/seo"
 import Layout from "../components/layout/layout"
 
 export default () => (
   <Layout>
+    <SEO />
     <header className="page-title columns">
       <div className="column is-three-fifths is-offset-one-fifth">
         <h1 className="title">

@@ -1,18 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout/layout"
+import SEO from "../components/layout/seo"
 import Img from "gatsby-image"
 import { FaRegCalendar } from "react-icons/fa"
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="My experience" />
     <header className="page-title columns">
       <div className="column is-three-fifths is-offset-one-fifth">
         <h1 className="title">
           Experience
         </h1>
         <p>
-          For over ten years I have worked as a freelance consultant.  I've done projects for TUI, Colruyt, the European Commision, AUSY Belgium and many more.
+          For over ten years I specialized as a freelance consultant.  I've done projects for TUI, Colruyt, the European Commision, AUSY Belgium and many more.
         </p>
       </div>
     </header>
@@ -38,7 +40,7 @@ export default ({ data }) => (
                 </div>
               </div>
               <div className="column is-three-fifths">
-                <div dangerouslySetInnerHTML={{ __html: node.body.value }} />
+                <div dangerouslySetInnerHTML={{ __html: node.body.processed }} />
               </div>
             </div>
           </div>
@@ -56,6 +58,7 @@ export default ({ data }) => (
             title
             body {
               value
+              processed
             }
             field_project_period
             relationships {

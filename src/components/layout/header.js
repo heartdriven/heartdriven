@@ -21,9 +21,8 @@ const Header = ({active = false}) => {
       </NavbarBrand>
       <NavbarMenu isActive={ isActive } onClick={() => { setActive(!isActive)}} >
         <NavbarEnd>
-        <Link className="navbar-item" activeClassName="is-active" to="/">Self</Link>
             <Link className="navbar-item" activeClassName="is-active" to="/experience">Experience</Link>
-            <Link to="/" className="button is-small is-outlined is-light has-margin-left">
+            <Link to="/contact" className="button is-small is-outlined is-light has-margin-left">
               <span className="icon is-small">
                 <FaEnvelope />
               </span>
