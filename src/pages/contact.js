@@ -6,7 +6,7 @@ import { Field, Button, Label, FieldLabel, FieldBody, Control, Input, TextArea }
 export default () => (
   <>
     <Layout>
-      <SEO />
+      <SEO title="Contact me" />
       <header className="page-title columns">
         <div className="column is-three-fifths is-offset-one-fifth">
           <h1 className="title">
@@ -18,7 +18,7 @@ export default () => (
         </div>
       </header>
       <div class="column is-three-fifths is-offset-one-fifth">
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" data-netlify="true" action="/success">
           <Field isHorizontal>
             <FieldLabel isNormal>
               <Label>Name</Label>
@@ -59,7 +59,7 @@ export default () => (
             <FieldLabel isNormal />
             <FieldBody>
               <Control>
-                <Input type="submit" />
+                <Button type="submit" />
               </Control>
             </FieldBody>
           </Field>
