@@ -59,7 +59,7 @@ export default () => (
             <FieldLabel isNormal />
             <FieldBody>
               <Control>
-                <Button isColor='primary'>Send</Button>
+                <Input type="submit" />
               </Control>
             </FieldBody>
           </Field>
