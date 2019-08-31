@@ -1,20 +1,17 @@
-import React from 'react'
+import React from "react"
 import { Helmet } from "react-helmet"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
-const SEO = (props) => (
-  <Helmet
-    title={props.title}
-    titleTemplate="%s · Heart Driven"
-  ></Helmet>
-);
+const SEO = props => (
+  <Helmet title={props.title} titleTemplate="%s · Heart Driven"></Helmet>
+)
 
 SEO.propTypes = {
   title: PropTypes.string,
-};
+}
 
 SEO.defaultProps = {
-  title: 'Welcome!',
+  title: "Welcome!",
 }
 
 export default SEO
